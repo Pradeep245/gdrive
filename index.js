@@ -28,7 +28,7 @@ const drive = google.drive({
 	auth:oauth2Client
 })
 
-app.get('/', function (req, res) {
+app.get('/home', function (req, res) {
 
   res.render('index')
   if (!fs.existsSync(dir)){
